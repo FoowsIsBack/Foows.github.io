@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image" href="image/profile.jpg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -98,6 +99,18 @@
         <footer>
             <p>@Foows - 2024</p>
         </footer>
+        
+        <script>
+            document.onkeydown = function(e) {
+                if (e.key === "F12" || (e.ctrlKey && (e.key === "I" || e.key == "i" || e.key === "J" || e.key === "j" || e.key === "U" || e.key === "u"))) {
+                    return false;
+                }
+            };
+            document.addEventListener('contextmenu', function(event) {
+                event.preventDefault();
+            });
+            </script>
+            
     </main>
 </body>
 </html>
